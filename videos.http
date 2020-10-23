@@ -1,0 +1,27 @@
+@api = http://localhost:5000
+
+GET {{api}}/videos
+
+###
+GET {{api}}/videos/5f8fdca8fee2612408983c41
+
+### crea un video
+POST {{api}}/videos
+Content-Type: application/json
+
+{
+    "url": "https://www.youtube.com/watch?v=elKTXEyL4ic",
+    "title": "gndx video",
+    "description": "this is gndx video"
+}
+
+###
+DELETE {{api}}/videos/5f8fdca8fee2612408983c41
+
+###
+PUT {{api}}/videos/5f8f1d40d0604826f0604726
+Content-Type: application/json
+
+{
+    "desceiption": "dfwewefwf es el mejor video de fazt"
+}
